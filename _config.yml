@@ -1,0 +1,29 @@
+# Site settings
+title: Your Name | CS Student Blog # Appears in browser tab and header
+email: your.email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  A blog documenting my journey through Computer Science - projects, concepts, and learnings.
+baseurl: "" # the subpath of your site, e.g. /blog. Usually "" for user pages.
+url: "https://your-username.github.io" # your site's domain
+github_username:  your-username
+linkedin_username: your-linkedin-profile # Optional
+# twitter_username: your-twitter # Optional
+
+# Build settings
+markdown: kramdown # Markdown processor
+theme: null # We're using custom layouts/styles, not a theme gem
+plugins:
+  - jekyll-feed # Creates an Atom feed (RSS)
+
+# Optional: Collections for Projects (Alternative to projects.md page)
+# collections:
+#   projects:
+#     output: true
+#     permalink: /projects/:path/
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/

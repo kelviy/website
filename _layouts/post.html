@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<article class="post">
+  <h1>{{ page.title }}</h1>
+  <div class="post-meta">
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+    {% if page.categories.size > 0 %}
+      <span> | Categories: {{ page.categories | join: ', ' }}</span>
+    {% endif %}
+    {% if page.tags.size > 0 %}
+      <span> | Tags: {{ page.tags | join: ', ' }}</span>
+    {% endif %}
+  </div>
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <!-- Optional: Simple Previous/Next Post Links -->
+  <div class="post-nav">
+    {% if page.previous.url %}
+      <a href="{{ page.previous.url | relative_url }}" class="prev">« {{ page.previous.title }}</a>
+    {% endif %}
+    {% if page.next.url %}
+      <a href="{{ page.next.url | relative_url }}" class="next">{{ page.next.title }} »</a>
+    {% endif %}
+  </div>
+
+  <!-- Optional: Add comment system integration here (e.g., Giscus, Disqus) -->
+
+</article>
