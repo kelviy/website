@@ -3,7 +3,7 @@ title: Your Name | CS Student Blog # Appears in browser tab and header
 email: your.email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   A blog documenting my journey through Computer Science - projects, concepts, and learnings.
-baseurl: "/" # the subpath of your site, e.g. /blog. Usually "" for user pages.
+baseurl: "/website" # the subpath of your site, e.g. /blog. Usually "" for user pages.
 url: "https://www.kelvi.space" # your site's domain
 github_username:  your-username
 linkedin_username: your-linkedin-profile # Optional
